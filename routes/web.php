@@ -21,7 +21,6 @@ Route::get('/', function () {
 
 Route::get('/registroReporte/{id}', [ReporteController::class,'registroReporte']);
 
-Route::get('/reportarUsuario/{id}', [ReporteController::class,'reportarUsuario']);
-Route::get('send-mail', [MailController::class, 'index']);
+Route::post('/reportarUsuario/{id}', [ReporteController::class,'reportarUsuario']);
 
 

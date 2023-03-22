@@ -71,16 +71,31 @@
                     <label class for="form-control">{{$usuario->residencia}}</label>
                   </div>
                 </div>
-                <a class="btn btn-primary" href="{{url('reportarUsuario')}}/{{$usuario->id}}">Reportar</a>
+                <form action="{{ url('reportarUsuario') }}/{{ $usuario->id }}" method="POST">
+                    @csrf
+                <div class="row pb-5">
+                    <label class="col-sm-3 col-form-label">Donde lo encontró:</label>
+                    <div class="col-sm-9">
+                      <textarea required class="form-control" name="ubicacion" id="" cols="30" rows="10" placeholder="Escriba el lugar donde lo encontro, o alguna seña que nos indique su ubicación"></textarea>
+                    </div>
+                  </div>
+                  <div class="row pb-5">
+                    <label class="col-sm-3 col-form-label"> Teléfono de contacto:</label>
+                    <div class="col-sm-9">
+                      <input required class="form-control" name="telefono" type="text" placeholder="Teclee su teléfono para que los familiares se pongan en contacto con usted!">
+                    </div>
+                  </div>
+                <input class="btn btn-primary" href="{{url('reportarUsuario')}}/{{$usuario->id}}" type="submit" value="Reportar">
+            </form>
             </div>
-        </div>    
+        </div>
     </div>
 </div>
 
  <!--Footer-->
  <section class="align-self-end bd-footer">
     <footer class="bg-dark text-white text-center pt-3">
-    
+
       <section class="me-2 ms-2">
         <p>
           Contactanos en cuidatepulsera@gmail.com
@@ -92,12 +107,12 @@
           Te cuidamos con CuidaTe ;)
         </p>
       </section>
-      
+
       <div class="text-center pb-4 px-4" style="background-color: rgba(0, 0, 0, 0.025);">
         © 2023 Copyright:
         <a class="text-reset fw-bold" href="">CuidaTe.com</a>
       </div>
-    
+
     </footer>
   </section>
 </body>

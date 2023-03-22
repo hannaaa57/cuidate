@@ -18,9 +18,9 @@ class MailController extends Controller
             'title' => 'Correo de CuidaTe',
             'body' => 'Se ha reportado una emergencia'
         ];
-         
-        Mail::to('cuidatepulsera@gmail.com')->send(new DemoMail($mailData));
-           
+
+        Mail::to('santillan.itc@gmail.com')->send(new DemoMail($mailData));
+
         dd("Email is sent successfully.");
     }
 }
