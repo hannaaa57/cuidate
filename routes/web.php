@@ -21,6 +21,10 @@ Route::get('/', function () {
 
 Route::get('/registroReporte/{id}', [ReporteController::class,'registroReporte']);
 
+Route::get('/consultarReportes', [ReporteController::class,'consultar']);
+
 Route::post('/reportarUsuario/{id}', [ReporteController::class,'reportarUsuario']);
+
+
 
 

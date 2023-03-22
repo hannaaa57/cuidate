@@ -13,18 +13,25 @@ class ContactoSeeder extends Seeder
      */
     public function run(): void
     {
-        Contacto::create([ 
+        Contacto::create([
             'usuario_id'   => 2,
             'nombre'   => 'Yonatan Morales',
-            'email'   => 'yonatan.mt@outlook.es',
+            'email'   => 'ilse.amarianne@gmail.com',
             'telefono'   => '6677570577'
         ]);
 
-        Contacto::create([ 
+        Contacto::create([
             'usuario_id'   => 1,
             'nombre'   => 'Francisco Amador',
-            'email'   => 'frank7@gmail.com',
+            'email'   => 'hanna.amador@gmail.com',
             'telefono'   => '6671175874'
+        ]);
+
+        Contacto::create([
+            'usuario_id'   => 3,
+            'nombre'   => 'Luis Santillan',
+            'email'   => 'santillan.itc@gmail.com',
+            'telefono'   => '6671016386'
         ]);
     }
 }
