@@ -34,5 +34,27 @@ class UsuarioSeeder extends Seeder
             'donar' => 'No',
             'file_path' => 'NULL'
         ]);
+
+        Usuario::create([
+            'name'  => 'Ilse Marianne Castillo Pimienta',
+            'email' => 'ilse.amarianne@gmail.com',
+            'password' => bcrypt('ilse123'),
+            'telefono' => '6671548796',
+            'fecNacimiento' => '2005-03-12', 
+            'genero' => 'Femenino',
+            'CURP' => 'CAPI050312MSLSMLA1',
+            'altura' => '1.60',
+            'peso' => '54',
+            'tSangre' => 'ORH+',
+            'residencia' => 'Culiacán',
+            'enfermedad' => 'No',
+            'discapacidad' => 'No',
+            'alergias' => 'No',
+            'medicamentos' => 'No',
+            'embarazo' => 'No',
+            'DoA' => 'No',
+            'donar' => 'No',
+            'file_path' => 'NULL'
+        ]);
     }
 }
