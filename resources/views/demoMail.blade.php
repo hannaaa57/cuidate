@@ -11,7 +11,9 @@
     <p>La ubicación de localización es: <b>{{ $mailData['ubicacion'] }}</b></p>
 
     <p>Le pedimos que mantenga la calma, y se ponga en contacto con la persona que localizó a su familiar a través del teléfono: <b>{{ $mailData['telefono'] }}</b></p>
-    <br>
+
+    <p>Puede dar seguimiento a su reporte en CuidaTe Web App con el folio: <b>{{ $mailData['reporte']['folio'] }}</b></p>
+
     <p>Atte. <br>CuidaTe Web App</p>
 
     <p>¡Gracias por ayudar!</p>

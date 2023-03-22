@@ -41,7 +41,8 @@ class ReporteController extends Controller
             'ubicacion' => $request->input('ubicacion'),
             'telefono' => $request->input('telefono'),
             'usuario' => $usuario,
-            'contacto' => $contacto
+            'contacto' => $contacto,
+            'reporte' => $reporte
         ];
 
         Mail::to($contacto->email)->send(new DemoMail($mailData));
