@@ -15,9 +15,9 @@ class ContactoSeeder extends Seeder
     {
         Contacto::create([
             'usuario_id'   => 2,
-            'nombre'   => 'Yonatan Morales',
-            'email'   => 'ilse.amarianne@gmail.com',
-            'telefono'   => '6677570577'
+            'nombre'   => 'Yonatan Morales Togo',
+            'email'   => 'yonatan.mt@outlook.es',
+            'telefono'   => '6673468595'
         ]);
 
         Contacto::create([
